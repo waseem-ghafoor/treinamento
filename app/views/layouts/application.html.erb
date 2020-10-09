@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application' %>
+    <%= stylesheet_link_tag    'application', 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' %>
+  </head>
+
+  <body>
+    <%= yield %>
+
+    <%= javascript_include_tag 'application' %>
+  </body>
+</html>
