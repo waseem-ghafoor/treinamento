@@ -1,17 +1,39 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
   <head>
     <title>Blog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application' %>
-    <%= stylesheet_link_tag    'application', 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' %>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Site Metas -->
+    <title>Tech Blog - Stylish Magazine Blog Template</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    
+    <!-- Design fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> 
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true%>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%#= stylesheet_link_tag    'application' %>
+    <%#= stylesheet_link_tag    'application', 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' %>
   </head>
 
   <body>
     <%= yield %>
 
-    <%= javascript_include_tag 'application' %>
+    <%#= javascript_include_tag 'application' %>
   </body>
 </html>
