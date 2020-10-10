@@ -24,16 +24,13 @@
     
     <!-- Design fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> 
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true%>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%#= stylesheet_link_tag    'application' %>
-    <%#= stylesheet_link_tag    'application', 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' %>
+    <%= stylesheet_link_tag    'application'%>
+    
   </head>
 
   <body>
     <%= yield %>
 
-    <%#= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'application' %>
   </body>
 </html>
